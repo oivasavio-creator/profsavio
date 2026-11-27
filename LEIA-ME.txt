@@ -1,0 +1,52 @@
+SITE PROFSAVIO.COM NO GITHUB PAGES
+==================================
+
+1. Criar a conta e o repositório
+- Crie uma conta gratuita em github.com (anote o seu nome de usuário).
+- Clique em "+" (canto superior direito) > "New repository".
+- Repository name: profsavio-site | marque "Public" | marque "Add a README file".
+- Clique em "Create repository".
+
+2. Enviar os arquivos
+- Descompacte o .zip e abra a pasta profsavio-site.
+- No repositório, clique em "Add file" > "Upload files".
+- Selecione TUDO o que está DENTRO da pasta (Ctrl+A; no Mac, Cmd+A),
+  inclusive a pasta "assets", e arraste para a página.
+- Espere todos os arquivos carregarem e clique em "Commit changes".
+
+3. Ligar o GitHub Pages
+- No repositório: "Settings" > "Pages" (menu da esquerda).
+- Em "Build and deployment": Source = "Deploy from a branch";
+  Branch = "main" e pasta "/ (root)". Clique em "Save".
+- Em "Custom domain" deve aparecer profsavio.com (vem do arquivo CNAME).
+  Se não aparecer, digite profsavio.com e clique em "Save".
+
+4. Ajustar o DNS no Wix (Domínios > ... > Gerenciar registros de DNS)
+- Seção A (Host), host @: apague o 75.2.60.5 e crie QUATRO registros A:
+    185.199.108.153
+    185.199.109.153
+    185.199.110.153
+    185.199.111.153
+- Seção CNAME, host www: edite o valor para  SEUUSUARIO.github.io
+  (troque SEUUSUARIO pelo seu nome de usuário do GitHub; sem o nome
+  do repositório e sem ponto no final).
+- Não mexa nos registros MX nem TXT.
+
+5. Ativar o https
+- Volte em Settings > Pages. Quando aparecer "DNS check successful"
+  (pode levar de minutos a 24 horas), marque "Enforce HTTPS".
+
+6. Limpar o Netlify
+- No Netlify, em Domain management, remova profsavio.com do site
+  (ou exclua o site), para não haver conflito.
+
+ATUALIZAÇÕES FUTURAS
+- No repositório: "Add file" > "Upload files", arraste os arquivos
+  novos (os de mesmo nome são substituídos) e clique em "Commit changes".
+  O site se atualiza sozinho em um ou dois minutos.
+
+FORMULÁRIO DE CONTATO
+- Na primeira mensagem enviada pelo site, o FormSubmit manda um e-mail
+  de ativação para saviog@outlook.com. Clique no link uma vez.
+
+Lattes: http://lattes.cnpq.br/6185711609578334
